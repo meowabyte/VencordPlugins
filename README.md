@@ -1,41 +1,28 @@
-<img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/c249e425-c5a6-43ec-8220-f01864184c88" alt="shiggy" height="200">  
+<img src="assets/shiggycopter.png" alt="shiggy goes brrrr" height="200">  
   
 # 🐱 VencordPlugins
+My own list of plugins I made. They're not big since I have other projects that I work on, but I'm gonna make some in future.
 
 > [!NOTE]
-> Third party plugins are **NOT** supported by Vencord developers and you should proceed with caution when using them!
+> Third party plugins are **NOT** supported by Vencord developers and you should proceed with caution when using them! Also please **do not ask them for help with custom plugins, it will get you most likely muted**.
 
 > [!CAUTION]
 > [Vencord](https://github.com/Vendicated/Vencord) is a mod for Discord which breaks TOS, though Discord doesn't ban for it. If you really care about your account then better don't use it.
 
 ## 💻 Plugins included:
-> [!NOTE]
-> Plugins put in pull request **might be outdated**! I'm focusing on providing the most recent version for Vencord first. If you need them you can check appropriate branch of [my Vencord fork](https://github.com/kvbaxi/Vencord)
-- [noAppsAllowed](https://github.com/kvbaxi/VencordPlugins/blob/main/noAppsAllowed.tsx) - Replaces recently changed "APP" tag back into "BOT" tag. Useful for example in slavic languages where text gets hilariously long.  
-  <p align="center">
-    <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/484b08d7-4bd8-41a0-9452-00c8cf2edfaa" height="300" alt="Screenshot of the plugin/teaser">
-    <img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/01a2fb09-b569-44f1-8998-66a8aaf3d886" height="300" alt="Screenshot of the plugin/teaser">
-    <br><sub>[Before and after of plugin.]</sub>
-  </p>
+- [remixMe](remixMe/index.tsx) - Adds **REMIX** tag to every message of your that has any sort of attachment, not only image.  
+- [meowmrrp](meowmrrp/index.tsx) - Sends phrases like `meow` or `mrrp` on your current chat with reasonable delay. (More about how it works in plugin's settings) 
 
-- [remixMe](https://github.com/kvbaxi/VencordPlugins/blob/main/remixMe.tsx) - Adds "REMIX" tag to every message of your that has any sort of attachment, not only image.  
-  <p align="center"><img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/65ea958a-f7eb-432f-ae36-3af7520c630b" height="300" alt="Screenshot of the plugin/teaser"></p>
-  
+## 💬 Upcoming Plugins:
+`-`
 
-- [betterQuests](https://github.com/kvbaxi/VencordPlugins/blob/main/betterQuests) - Puts easier accessible button to quests on home screen (https://github.com/Vencord/plugin-requests/issues/361)  
-  <p align="center">
-    <img src="https://github.com/kvba0000/VencordPlugins/assets/47297843/a1793203-263e-4d6f-8b07-14f407bb2c4c" height="300" alt="Screenshot of the plugin/teaser">
-  </p>
-
-
-## 💬 Upcoming plugins:
-
-- [ImageUtilities]() - Introduces a lot of new utilities making experience with images on Discord a lot easier! (https://github.com/Vencord/plugin-requests/issues/350)  
-  <a href="https://discord.com/channels/1015060230222131221/1032770730703716362/1231464903563284590"><p align="center"><img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/d448a23f-e740-48f6-8b83-03061dc7853c" height="300" alt="Screenshot of the plugin/teaser"></a><br><sub>[Screenshot presenting active working on the plugin.]</sub></p>
+## ❌ Removed Plugins (+ reason):
+- noAppsAllowed - Useless + easily breakable plugin. You can easily find a CSS snippet that replaces this.
+- betterQuests - Unusable - would crash Discord on start with it, since that time Discord already put quests in a *bit* better place (`Discover > Quests`)
 
 
 ## ❔ How to install third party plugins?
 https://docs.vencord.dev/installing/custom-plugins/
 
-<img src="https://github.com/kvbaxi/VencordPlugins/assets/47297843/604afd40-2c62-4ec0-9eb3-3cff171882e0" alt="shiggy" height="200">
+<img src="assets/shiggyboo.png" alt="shiggy jumpscares you" height="200">
 
