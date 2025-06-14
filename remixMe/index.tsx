@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { MessageEvents } from "@api/index";
-import type { MessageExtra, MessageObject, MessageSendListener } from "@api/MessageEvents";
+import { addMessagePreSendListener, type MessageExtra, type MessageObject, type MessageSendListener, removeMessagePreSendListener } from "@api/MessageEvents";
+import { EquicordDevs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 import type { UploadWithRemix } from "./types";
@@ -17,7 +17,7 @@ const handleMessage: MessageSendListener = (_: string, __: MessageObject, ex: Me
 export default definePlugin({
     name: "RemixMe",
     description: "Turns every single message with attachment to have remix tag",
-    authors: [{ name: "meowabyte", id: 105170831130234880n }],
-    start: () => MessageEvents.addMessagePreSendListener(handleMessage),
-    stop: () => MessageEvents.addMessagePreSendListener(handleMessage)
+    authors: [EquicordDevs.meowabyte],
+    start: () => addMessagePreSendListener(handleMessage),
+    stop: () => removeMessagePreSendListener(handleMessage)
 });
