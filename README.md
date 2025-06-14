@@ -11,8 +11,8 @@ My own list of plugins I made. They're not big since I have other projects that 
 
 ## 💻 Plugins included:
 
--   [remixMe](plugins/remixMe/) - Adds **REMIX** tag to every message of your that has any sort of attachment, not only image.
--   [meowmrrp](plugins/meowmrrp/) - Sends phrases like `meow` or `mrrp` on your current chat with reasonable delay. (More about how it works in plugin's settings)
+-   [remixMe](https://github.com/meowabyte/remixMe/) - Adds **REMIX** tag to every message of your that has any sort of attachment, not only image.
+-   [meowmrrp](https://github.com/meowabyte/meowmrrp/) - Sends phrases like `meow` or `mrrp` on your current chat with reasonable delay. (More about how it works in plugin's settings)
 
 ## 💬 Upcoming Plugins:
 
