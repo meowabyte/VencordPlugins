@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Issues outside repo's scope.
+      url: https://meowpa.ws
+      about: For anything that is not listed here.
