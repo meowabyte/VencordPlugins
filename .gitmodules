@@ -1,0 +1,6 @@
+[submodule "plugins/remixMe"]
+	path = plugins/remixMe
+	url = https://github.com/meowabyte/remixMe
+[submodule "plugins/meowmrrp"]
+	path = plugins/meowmrrp
+	url = https://github.com/meowabyte/meowmrrp

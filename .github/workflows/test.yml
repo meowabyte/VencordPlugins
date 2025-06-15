@@ -1,0 +1,57 @@
+name: Test validity of plugins
+
+on:
+    push:
+        paths:
+            - "index.ts"
+            - "plugins/**/*"
+    workflow_dispatch:
+
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        concurrency: 
+            cancel-in-progress: true
+            group: plugin-test
+
+        steps:
+            - name: Prepare Vencord
+              uses: actions/checkout@v4
+              with:
+                  repository: "Vendicated/Vencord"
+                  path: vencord
+
+            - name: Prepare plugins
+              uses: actions/checkout@v4
+              with:
+                path: vencord/src/userplugins/plugins
+                submodules: recursive
+
+            - name: Prepare pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                version: 10.4.1
+
+            - name: Get pnpm store path
+              id: pnpm-cache
+              run: |
+                echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+            - name: Cache pnpm modules
+              uses: actions/cache@v4
+              with:
+                path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+                key: ${{ runner.os }}-pnpm-${{ hashFiles('vencord/pnpm-lock.yaml') }}
+                restore-keys: |
+                    ${{ runner.os }}-pnpm-
+            
+            - name: Setup Vencord
+              run: |
+                cd vencord
+                pnpm install --no-frozen-lockfile
+
+            - name: Run tests
+              run: |
+                cd vencord
+                pnpm build
